@@ -195,18 +195,6 @@ RUN if [ ${INSTALL_ADDITIONAL_LOCALES} = true ]; then \
 ;fi
 
 ###########################################################################
-# MySQL Client:
-###########################################################################
-
-USER root
-
-ARG INSTALL_MYSQL_CLIENT=false
-
-RUN if [ ${INSTALL_MYSQL_CLIENT} = true ]; then \
-      apt-get -y install default-mysql-client \
-;fi
-
-###########################################################################
 # Check PHP version:
 ###########################################################################
 
